@@ -1,0 +1,43 @@
+/* src/BestOfElectronics.module.css */
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 960px; /* Adjust based on your preference */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .productsContainer {
+    display: flex;
+    width: calc(240px * 4); /* Adjust the width based on the number of items to show and their width */
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+  
+  .productCard {
+    width: 240px; /* Adjust based on your preference */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .productCard img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .navButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    z-index: 100;
+  }
+  
+  .navButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

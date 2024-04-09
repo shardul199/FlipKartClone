@@ -1,0 +1,43 @@
+/* src/HeroSlider.module.css */
+.slider {
+    width: 80%;
+    max-width: 1200px; /* Adjust based on your preference */
+    height: 500px; /* Adjust based on your preference */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .leftArrow, .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .leftArrow {
+    left: 10px;
+  }
+  
+  .rightArrow {
+    right: 10px;
+  }
+  
+  /* Optional: Add hover effect for buttons */
+  .leftArrow:hover, .rightArrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

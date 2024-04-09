@@ -1,0 +1,70 @@
+/* src/Navbar.module.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+  }
+  
+  .logo {
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .searchContainer {
+    display: flex;
+    flex-grow: 2;
+  }
+  
+  .searchContainer input[type="text"] {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 2px solid #f0f0f0; /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    outline: none; /* Removes the default focus outline */
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+  }
+  
+  .searchContainer input[type="text"]:focus {
+    border-color: #007bff; /* Focus border color, matches the navbar */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Soft glow effect */
+  }
+  .searchContainer button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px; /* Rounded corners to match the input field */
+    background-color: #007bff; /* Matching the navbar color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .searchContainer button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  .searchContainer button {
+    padding: 6px;
+    background-color: #f8f9fa;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navLinks a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 600px) {
+    .navLinks, .searchContainer {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navLinks a, .searchContainer input, .searchContainer button {
+      width: 100%;
+    }
+  }
+  
